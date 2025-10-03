@@ -1,0 +1,198 @@
+{
+  "cookies": [
+    {
+      "name": "KC_AUTH_SESSION_HASH",
+      "value": "\"S3V7fKlxN/GCmoeXldQTdrEoYZS6nJD9/fIYoEqvhxE\"",
+      "domain": "id.alohi.com",
+      "path": "/realms/alohi/",
+      "expires": 1759521274.601373,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "AUTH_SESSION_ID",
+      "value": "YjEyZjU2M2YtZDMzOS00NWFkLTg3NzItMGY0YzI5ODZhOTM2LjM3b1RGVVprSzk3aHprMVJPc1VLMG9EY3BBV3EwalQwcDlYVUxsMy1CN25Gb25ndm1MRTNXWWdUdFJKaVBvV0E1bThXYTZZSnhHbnRZUEhZdWZYSW93.node_819423",
+      "domain": "id.alohi.com",
+      "path": "/realms/alohi/",
+      "expires": -1,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "KEYCLOAK_LOCALE",
+      "value": "en",
+      "domain": "id.alohi.com",
+      "path": "/realms/alohi/",
+      "expires": -1,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "KEYCLOAK_SESSION",
+      "value": "S3V7fKlxN_GCmoeXldQTdrEoYZS6nJD9_fIYoEqvhxE",
+      "domain": "id.alohi.com",
+      "path": "/realms/alohi/",
+      "expires": 1760385214.602787,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "KEYCLOAK_IDENTITY",
+      "value": "eyJhbGciOiJIUzUxMiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJhZGIwNmM5Ny0xYjIxLTRkZGEtYmNhOC0xMDc1MDM0OTUyYjUifQ.eyJleHAiOjE3NjAzODUyMTQsImlhdCI6MTc1OTUyMTIxNCwianRpIjoiM2JkYTI5NzYtZDJkOS00YzY2LWJiNjEtZjcwMWI0Njg4NWY0IiwiaXNzIjoiaHR0cHM6Ly9pZC5hbG9oaS5jb20vcmVhbG1zL2Fsb2hpIiwic3ViIjoiYWRiODQwYzYxMDRjNDk4MThmNDc4YzA0MTc3Nzk1NjYiLCJ0eXAiOiJTZXJpYWxpemVkLUlEIiwic2lkIjoiYjEyZjU2M2YtZDMzOS00NWFkLTg3NzItMGY0YzI5ODZhOTM2Iiwic3RhdGVfY2hlY2tlciI6InJaZkc3dDBSSUpFekxObHhsX2VBOHBYai1UaHNnUVNsS2xWLVlPeWw3ekUifQ.UcEGo7od0cT-6BtivZO6JaIJsB8flryMx1bvJBiKyzxrZK9YnsPGFBJ-T9SvK9RSAzsNOXVJ4f-_5jDHfB-_6A",
+      "domain": "id.alohi.com",
+      "path": "/realms/alohi/",
+      "expires": -1,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "__cf_bm",
+      "value": "z5Bf92TrKd79982I1y3qmybgcPGp1SQHduOR4M3UbZE-1759521189-1.0.1.1-YQ_e70HWCO0g_auayhgPAlxXWNrTcBKk4uncpgv8yCKWtB7oIt7DiUy.PLIW1abw4j.SvkHW54YSkVrT1Qs4c488VmEO_MlQ9zeMvV8Evfo",
+      "domain": ".sign.plus",
+      "path": "/",
+      "expires": 1759522989.164883,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "__cf_bm",
+      "value": "l1eH8BHFN3LTLipxCfONwvHSt68Lg1vS1DkTWcs4By4-1759521199-1.0.1.1-QvD2yn9BLKTO3F1KRhSEM8jXof5_9Ka.YJKVNXSk3slx56_w2gghKXuixVbMqMWww3Zhs4_QX_2IYtbBBbmznkKLHHCIQsSZJu0g_eCwdz8",
+      "domain": ".alohi.com",
+      "path": "/",
+      "expires": 1759522999.052454,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "__cflb",
+      "value": "0H28uwQBSXuVrgh3CQoTXJxJPTxsrohBsFwZn3N13zD",
+      "domain": "id.alohi.com",
+      "path": "/",
+      "expires": 1759522999.052747,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "os_locale",
+      "value": "en-US",
+      "domain": "id.alohi.com",
+      "path": "/",
+      "expires": 1775299675.521582,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "cf_clearance",
+      "value": "8SGuxOATaMUxml8Qv4l8nOjIVrk8BYZG9WjrMgS48uQ-1759521199-1.2.1.1-gD41XNasO0L3QlHH_kfZhwLPclhEMsg.whdiIUd1zVrGNLxaZUbWAgMYIKypXsvUqeqZXDbr1GxL.5f4__gcRtjs2aiQYarrVIJU3jB1HqhRgcdqYrX9Lp93X0LtdqQr_XoBcFE8_nErqXKzFaeTJO_Q2b9dPaZCD8Y1L4B3tEa8b5YKm8B1LKy0zs8ttl77TONacFeYUVKbuTMse0XIJmZaxodRHL92gFKgQTaVObw",
+      "domain": ".alohi.com",
+      "path": "/",
+      "expires": 1791057200.004931,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None",
+      "partitionKey": "https://alohi.com",
+      "_crHasCrossSiteAncestor": false
+    },
+    {
+      "name": "_ga",
+      "value": "GA1.1.1700831572.1759521200",
+      "domain": ".alohi.com",
+      "path": "/",
+      "expires": 1794081201.226526,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_ga_3YN688DMLN",
+      "value": "GS2.1.s1759521200$o1$g1$t1759521202$j58$l0$h0",
+      "domain": ".alohi.com",
+      "path": "/",
+      "expires": 1794081202.043574,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "cf_chl_rc_ni",
+      "value": "2",
+      "domain": "app.sign.plus",
+      "path": "/",
+      "expires": 1759524808,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None",
+      "partitionKey": "https://sign.plus",
+      "_crHasCrossSiteAncestor": false
+    },
+    {
+      "name": "_ac",
+      "value": "f857c60e6e1d42f3b65f37959e07f68d",
+      "domain": "api.sign.plus",
+      "path": "/",
+      "expires": 1759521226.118773,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    }
+  ],
+  "origins": [
+    {
+      "origin": "https://app.sign.plus",
+      "localStorage": [
+        {
+          "name": "unleash:repository:sessionId",
+          "value": "88863169"
+        },
+        {
+          "name": "i18nextLng",
+          "value": "en"
+        },
+        {
+          "name": "unleash:repository:repo",
+          "value": "[{\"name\":\"fax-sign-cross-selling-banner\",\"enabled\":true,\"variant\":{\"name\":\"disabled\",\"enabled\":false,\"payload\":null},\"impressionData\":false},{\"name\":\"alohi-admin-fax\",\"enabled\":true,\"variant\":{\"name\":\"disabled\",\"enabled\":false,\"payload\":null},\"impressionData\":false},{\"name\":\"alohi-admin\",\"enabled\":true,\"variant\":{\"name\":\"disabled\",\"enabled\":false,\"payload\":null},\"impressionData\":false},{\"name\":\"use-new-eshop\",\"enabled\":true,\"variant\":{\"name\":\"disabled\",\"enabled\":false,\"payload\":null},\"impressionData\":false},{\"name\":\"app-alohi-com-mail\",\"enabled\":true,\"variant\":{\"name\":\"disabled\",\"enabled\":false,\"payload\":null},\"impressionData\":false},{\"name\":\"use-ms-graph-converter\",\"enabled\":true,\"variant\":{\"name\":\"disabled\",\"enabled\":false,\"payload\":null},\"impressionData\":false}]"
+        },
+        {
+          "name": "appVersion",
+          "value": "8.4.2"
+        }
+      ]
+    },
+    {
+      "origin": "https://challenges.cloudflare.com",
+      "localStorage": [
+        {
+          "name": "cf.turnstile.u",
+          "value": "bcRFylj_vQtPji3DmKZDCsTw46GmguduXn5Nmxr8E44-1759521189-1.3.1.1-K4a6J6oXFMFOSSq2h7g1boxp1YKxPNKSqLOVIet3GEAFTri78vUadwOptbdXEAgJ4ObXZsbiufsum4Rrs71h4Q"
+        }
+      ]
+    },
+    {
+      "origin": "https://id.alohi.com",
+      "localStorage": [
+        {
+          "name": "appVersion",
+          "value": "1.0.29"
+        }
+      ]
+    },
+    {
+      "origin": "https://25330q9qmh6g.statuspage.io",
+      "localStorage": [
+        {
+          "name": "25330q9qmh6g.statuspage.io_dismissed",
+          "value": "[]"
+        }
+      ]
+    }
+  ]
+}
