@@ -1,0 +1,57 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e5]:
+  - generic [ref=e6]:
+    - banner [ref=e7]:
+      - link [ref=e9] [cursor=pointer]:
+        - /url: https://www.sign.plus
+        - img [ref=e10] [cursor=pointer]
+    - generic [ref=e12]:
+      - generic [ref=e15]:
+        - generic [ref=e16]:
+          - generic [ref=e18]: Email
+          - textbox "Email" [active] [ref=e19]: shein.khinsu@gmail.com
+          - generic [ref=e20]: Account is temporarily disabled; contact your administrator or retry later.
+        - generic [ref=e24] [cursor=pointer]:
+          - checkbox "Remember me" [ref=e25] [cursor=pointer]
+          - generic [ref=e26] [cursor=pointer]: Remember me
+        - button "Sign In" [ref=e28] [cursor=pointer]
+      - generic [ref=e30]:
+        - generic [ref=e33]: or sign in with
+        - link "Google Google" [ref=e35] [cursor=pointer]:
+          - /url: /realms/alohi/broker/google/login?client_id=sign-web-client&tab_id=m-mKbPvB9Ng&client_data=eyJydSI6Imh0dHBzOi8vYXBwLnNpZ24ucGx1cy9sb2dpbiIsInJ0IjoiY29kZSJ9&session_code=PUGJeJsBQzrwJS_zciGLJ88AxIOgA5-iLahevrm1buw
+          - img "Google" [ref=e36] [cursor=pointer]
+          - generic [ref=e37] [cursor=pointer]: Google
+        - link "Microsoft Microsoft" [ref=e38] [cursor=pointer]:
+          - /url: /realms/alohi/broker/microsoft/login?client_id=sign-web-client&tab_id=m-mKbPvB9Ng&client_data=eyJydSI6Imh0dHBzOi8vYXBwLnNpZ24ucGx1cy9sb2dpbiIsInJ0IjoiY29kZSJ9&session_code=PUGJeJsBQzrwJS_zciGLJ88AxIOgA5-iLahevrm1buw
+          - img "Microsoft" [ref=e39] [cursor=pointer]
+          - generic [ref=e40] [cursor=pointer]: Microsoft
+        - link "Apple Apple" [ref=e41] [cursor=pointer]:
+          - /url: /realms/alohi/broker/apple/login?client_id=sign-web-client&tab_id=m-mKbPvB9Ng&client_data=eyJydSI6Imh0dHBzOi8vYXBwLnNpZ24ucGx1cy9sb2dpbiIsInJ0IjoiY29kZSJ9&session_code=PUGJeJsBQzrwJS_zciGLJ88AxIOgA5-iLahevrm1buw
+          - img "Apple" [ref=e42] [cursor=pointer]
+          - generic [ref=e43] [cursor=pointer]: Apple
+      - generic [ref=e47]:
+        - generic [ref=e48]: New user?
+        - link "Sign Up For Free" [ref=e49] [cursor=pointer]:
+          - /url: /realms/alohi/login-actions/registration?client_id=sign-web-client&tab_id=m-mKbPvB9Ng&client_data=eyJydSI6Imh0dHBzOi8vYXBwLnNpZ24ucGx1cy9sb2dpbiIsInJ0IjoiY29kZSJ9
+          - generic [ref=e50] [cursor=pointer]: Sign Up For Free
+  - generic [ref=e51]:
+    - generic [ref=e52]:
+      - img [ref=e53] [cursor=pointer]
+      - generic [ref=e54]:
+        - img [ref=e58] [cursor=pointer]
+        - img [ref=e65] [cursor=pointer]
+        - img [ref=e72] [cursor=pointer]
+        - img [ref=e80] [cursor=pointer]
+    - generic [ref=e86]:
+      - link "Terms of Service" [ref=e87] [cursor=pointer]:
+        - /url: https://www.alohi.com/terms-service
+        - generic [ref=e88] [cursor=pointer]: Terms of Service
+      - link "Privacy Policy" [ref=e89] [cursor=pointer]:
+        - /url: https://www.alohi.com/privacy-policy
+        - generic [ref=e90] [cursor=pointer]: Privacy Policy
+      - button "English" [ref=e93] [cursor=pointer]:
+        - text: English
+        - img [ref=e95] [cursor=pointer]
+```
