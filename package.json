@@ -7,8 +7,8 @@
   "license": "ISC",
   "keywords": [],
   "scripts": {
-    "login:success": "cross-env TEST_USER_EMAIL=shein.khinsu@gmail.com TEST_USER_PASSWORD=MTh23032012 npx playwright test -g \"Login succeeds with valid credentials\" --headed",
-    "login:fail": "cross-env TEST_USER_EMAIL=shein.khinsu@gmail.com TEST_USER_PASSWORD=WrongPassword123! npx playwright test -g \"Login fails with wrong password\" --headed",
+    "login:success": "cross-env TEST_USER_EMAIL=shein.user@gmail.com TEST_USER_PASSWORD=userpwd npx playwright test -g \"Login succeeds with valid credentials\" --headed",
+    "login:fail": "cross-env TEST_USER_EMAIL=user@gmail.com TEST_USER_PASSWORD=WrongPassword123! npx playwright test -g \"Login fails with wrong password\" --headed",
     "test": "npx playwright test",
     "test:sign": "playwright test -g 'Sign.Plus' --project=sign-plus-chromium",
     "test:fax": "playwright test -g 'Fax.Plus' --project=fax-plus-firefox",
