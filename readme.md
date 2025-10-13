@@ -1,3 +1,5 @@
+https://img.shields.io/badge/Playwright-1.55.1-blue
+
 # Project 1 – Automation Testing for Authentication & Shopping Flow
 
 This project demonstrates automated testing of the [Demoblaze](https://wwwon using [Playwright](https://playwrightModel (POM).
