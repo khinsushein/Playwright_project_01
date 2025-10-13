@@ -1,4 +1,5 @@
-https://img.shields.io/badge/Playwright-1.55.1-blue
+![Static Badge](https://img.shields.io/badge/Playwright-1.55.1-blue)
+
 
 # Project 1 – Automation Testing for Authentication & Shopping Flow
 
