@@ -1,23 +1,13 @@
 {
-  "name": "project2",
-  "version": "1.0.0",
-  "main": "index.js",
-  "description": "",
-  "author": "",
-  "license": "ISC",
-  "keywords": [],
   "scripts": {
-    "login:success": "cross-env TEST_USER_EMAIL=shein.user@gmail.com TEST_USER_PASSWORD=userpwd npx playwright test -g \"Login succeeds with valid credentials\" --headed",
-    "login:fail": "cross-env TEST_USER_EMAIL=user@gmail.com TEST_USER_PASSWORD=WrongPassword123! npx playwright test -g \"Login fails with wrong password\" --headed",
     "test": "npx playwright test",
-    "test:sign": "playwright test -g 'Sign.Plus' --project=sign-plus-chromium",
-    "test:fax": "playwright test -g 'Fax.Plus' --project=fax-plus-firefox",
-    "test:scan": "playwright test -g 'Scan.Plus' --project=fax-plus-webkit",
-    "test:chromium": "npx playwright test --project=chromium --headed"
+    "ui": "npx playwright test --ui",
+    "report": "npx playwright show-report"
   },
   "devDependencies": {
-    "@playwright/test": "^1.55.1",
-    "@types/node": "^24.6.0",
-    "cross-env": "^10.1.0"
+    "@playwright/test": "^1.55.1"
   }
 }
+
+
+
