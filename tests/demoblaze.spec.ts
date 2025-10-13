@@ -77,10 +77,22 @@ export async function login(page: Page, username: string, password: string) {
 }
 
 
+// robust logout helper
 async function logout(page: Page) {
-  await page.getByText('Log out').click();
-  await page.waitForTimeout(8000)
+  // If a JS alert is still open (from add-to-cart / login), accept it
+  page.once('dialog', d => d.accept().catch(() => {}));
+
+  // Click the nav "Log out" link if visible
+  const logoutLink = page.getByRole('link', { name: 'Log out', exact: true });
+  if (await logoutLink.isVisible().catch(() => false)) {
+    await logoutLink.click();
+  }
+
+  // Wait for logged-out UI: “Log in” link reappears
+  await expect(page.getByRole('link', { name: 'Log in', exact: true })).toBeVisible();
 }
+
+
 
 test.describe('Demoblaze e2e', () => {
   const password = 'P@ssw0rd123';
@@ -168,8 +180,7 @@ test.describe('Demoblaze e2e', () => {
         
     // Logout
     await logout(page);
-    await page.waitForTimeout(1000)
-  });
+      });
 
   test('Negative: login for non-existent user shows an error', async ({ page }) => {
     await page.goto('/');

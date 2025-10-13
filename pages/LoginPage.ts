@@ -8,7 +8,7 @@ export class LoginPage {
   constructor(private page: Page) {
     this.email = page.locator('#username, input[name="username"], input[type="email"]');
     this.password = page.locator('#password, input[name="password"], input[type="password"]');
-    #this.signIn = page.getByRole('button', { name: /sign in|log in/i });
+    this.signIn = page.getByRole('button', { name: /sign in|log in/i });
   }
 
   async goto() {
@@ -26,7 +26,7 @@ export class LoginPage {
     await this.password.fill(pwd);
 
     await expect(this.signIn).toBeEnabled();
-    #await this.signIn.click();
+    await this.signIn.click();
 
     // optional: verify landing
     await expect(this.page.getByRole('navigation')).toBeVisible({ timeout: 12000 });

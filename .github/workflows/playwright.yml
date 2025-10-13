@@ -1,4 +1,4 @@
-name: Playwright Tests
+name: Playwright CI
 
 on:
   push:
@@ -7,26 +7,73 @@ on:
     branches: [ main ]
 
 jobs:
-  test:
+  e2e:
     runs-on: ubuntu-latest
 
+    strategy:
+      fail-fast: false
+      matrix:
+        project: [ "chrome", "firefox", "webkit" ]   # match your Playwright projects
+
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
+      - name: Checkout
+        uses: actions/checkout@v4
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
+      - name: Setup Node
+        uses: actions/setup-node@v4
         with:
-          node-version: '18'
+          node-version: 20
+          cache: npm
 
-      - name: Install dependencies
+      - name: Install deps
         run: npm ci
 
       - name: Install Playwright browsers
-        run: npx playwright install
+        run: npx playwright install --with-deps
+
+      # If you load env from .env locally, you can set CI secrets here instead:
+      # env:
+      #   DEMOBLAZE_USER: ${{ secrets.DEMOBLAZE_USER }}
+      #   DEMOBLAZE_PASS: ${{ secrets.DEMOBLAZE_PASS }}
 
       - name: Run Playwright tests
-        run: npx playwright test
+        env:
+          # Keep or tweak these to match your config
+          PWVIDEO: on
+        run: npx playwright test --project=${{ matrix.project }}
+
+      - name: Upload HTML report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: playwright-report-${{ matrix.project }}
+          path: playwright-report/
+          retention-days: 7
+
+      - name: Upload test results (videos, traces, screenshots)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-results-${{ matrix.project }}
+          path: test-results/
+          retention-days: 7
+
+  publish-report:
+    needs: e2e
+    if: always()
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          name: playwright-report-chrome     # or pick one artifact to publish
+          path: ./_site
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_site
+
 
 
 
