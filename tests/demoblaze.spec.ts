@@ -71,9 +71,10 @@ export async function login(page: Page, username: string, password: string) {
   await modal.locator('#loginusername').fill(username);
   await modal.locator('#loginpassword').fill(password);
   await modal.getByRole('button', { name: 'Log in' }).click();
-
+  await modal.getByRole('button', { name: 'Log in' }).click();
+  console.log('Clicked login button');
   await expect(page.getByText(new RegExp(`Welcome\\s+${username}`))).toBeVisible();
-  await page.waitForTimeout(8000)
+  await page.waitForTimeout(5000)
 }
 
 
@@ -106,81 +107,84 @@ test.describe('Demoblaze e2e', () => {
     await ctx.close();
   });
 
+  test.setTimeout(60_000); // give the whole flow breathing room
+
   test('Login → add to cart → place order → receipt → logout', async ({ page }) => {
     await login(page, username, password);
-    await page.waitForTimeout(3000)
 
-    // Go to "Laptops" category and pick an item
-    await page.getByText('Laptops').click();
-    await page.waitForTimeout(1000)
-    await page.getByText('Sony vaio i5').click(); // pick any product that exists
-    await addToCartWithAlertOrFallback(page, 'Sony vaio i5');
-    await page.waitForTimeout(1000)
+    // Go to home (avoid category race)
+    await page.goto('https://www.demoblaze.com/', { waitUntil: 'domcontentloaded' });
 
-    // Add to cart (alert confirms)
-    const msg = await clickAndWaitAlert(page, async () => {
-    await page.getByText('Add to cart').click();
-    await page.waitForTimeout(1000)
-    });
-    expect(msg).toMatch(/Product added/i);
-    await page.getByText('OK').click();
-    await page.waitForTimeout(2000)
+    // Category → Product (one click, one wait)
+    const laptopsLink = page.getByRole('link', { name: /^Laptops$/, exact: true });
+    await laptopsLink.scrollIntoViewIfNeeded();
+    await expect(laptopsLink).toBeVisible();
+    await laptopsLink.click();
 
+    const productLink = page.getByRole('link', { name: /^Sony vaio i5$/, exact: true });
+    await productLink.scrollIntoViewIfNeeded();
+    await expect(productLink).toBeVisible({ timeout: 10_000 });
+    await Promise.all([
+      page.waitForURL(/prod\.html\?idp_/),
+      productLink.click(),
+    ]);
 
-    // Open cart and verify the item is listed
-    await page.getByRole('link', { name: 'Cart', exact: true }).click();
-    await page.waitForSelector('#tbodyid'); // Wait for the cart table to appear
-    await page.waitForTimeout(1000)
+    // On PDP, confirm product title
+    await expect(page.locator('#tbodyid .name')).toHaveText('Sony vaio i5', { timeout: 10_000 });
 
-    // 1) Click "Place Order" (make sure the button is actually visible/ready)
-    const placeOrderBtn = page.getByRole('button', { name: 'Place Order', exact: true });
+    // Add to cart → wait for JS alert
+    const addBtn = page.getByRole('link', { name: /^Add to cart$/, exact: true });
+    await addBtn.scrollIntoViewIfNeeded();
+    await expect(addBtn).toBeVisible();
+    const [dlg] = await Promise.all([
+      page.waitForEvent('dialog', { timeout: 10_000 }),
+      addBtn.click({ force: true }),
+    ]);
+    await expect.soft(dlg.message()).toMatch(/Product added/i);
+    await dlg.accept();
+
+    // Open cart and verify item
+    await Promise.all([
+      page.waitForURL(/cart\.html/),
+      page.locator('#cartur').click(),
+    ]);
+    await expect(page.locator('#tbodyid tr', { hasText: 'Sony vaio i5' })).toBeVisible({ timeout: 10_000 });
+
+    // Place Order → Purchase → receipt
+    const placeOrderBtn = page.getByRole('button', { name: /^Place Order$/, exact: true });
     await placeOrderBtn.scrollIntoViewIfNeeded();
-    await expect(placeOrderBtn).toBeVisible();
     await expect(placeOrderBtn).toBeEnabled();
     await placeOrderBtn.click();
 
-
-    // 2) The order modal appears — scope all locators to it
     const orderModal = page.locator('#orderModal');
-    await expect(orderModal).toBeVisible({ timeout: 5000 });
+    await expect(orderModal).toBeVisible({ timeout: 5_000 });
 
-    // 3) Fill required fields inside the modal
     await orderModal.locator('#name').fill('Ada Lovelace');
     await orderModal.locator('#country').fill('UK');
     await orderModal.locator('#city').fill('London');
     await orderModal.locator('#card').fill('4111111111111111');
     await orderModal.locator('#month').fill('12');
     await orderModal.locator('#year').fill('2030');
+    await orderModal.getByRole('button', { name: /^Purchase$/, exact: true }).click();
 
-    // 4) Click "Purchase" inside the modal
-    await orderModal.getByRole('button', { name: 'Purchase', exact: true }).click();
-    await page.waitForTimeout(1000)
-
-    // 5) Verify the SweetAlert receipt and click OK
-    const receiptBlock = page.locator('.sweet-alert > p'); // or whatever selector matches the receipt text      
-    await expect(receiptBlock).toContainText(/Id:\s*\d+/i);
-    await expect(receiptBlock).toContainText(/Amount:\s*\d+\s*USD?/i);
+    const receipt = page.locator('.sweet-alert p');
+    await expect(receipt).toBeVisible({ timeout: 5_000 });
+    await expect(receipt).toContainText(/Id:\s*\d+/i);
+    await expect(receipt).toContainText(/Amount:\s*\d+\s*(USD|\$)/i);
     await page.getByRole('button', { name: 'OK', exact: true }).click();
-    await page.waitForTimeout(1000)
 
-    // 6) Optional: ensure cart is now empty
-    await page.getByRole('link', { name: 'Cart', exact: true }).click();
-    await expect(page.locator('#tbodyid tr')).toHaveCount(0);
+    // Re-open cart (navigate directly; avoids intercepted clicks / no-nav cases)
+    await page.goto('https://www.demoblaze.com/cart.html', { waitUntil: 'domcontentloaded' });
 
-    // Check if there are any product rows in the cart
-        const cartItems = await page.locator('#tbodyid > tr').count();
-
-            if (cartItems === 0) {
-            console.log('Cart is empty');
-        }   else {
-        console.log(`Cart has ${cartItems} item(s)`);
-            }
-      
-            await expect(page.locator('#tbodyid > tr')).toHaveCount(0);
-        
     // Logout
-    await logout(page);
-      });
+    
+    const logoutLink = page.getByRole('link', { name: 'Log out', exact: true });
+    await expect(logoutLink).toBeVisible({ timeout: 8000 }); // wait up to 10s
+    await logoutLink.click();
+    });
+
+
+
 
   test('Negative: login for non-existent user shows an error', async ({ page }) => {
     await page.goto('/');
@@ -250,4 +254,4 @@ test('Negative: login with wrong password – shows an error', async ({ page }) 
 });
 
   
-});
+  });

@@ -1,7 +1,11 @@
 import { defineConfig } from '@playwright/test';
 
 export default defineConfig({
-  reporter: [['list'], ['html', { open: 'never' }]],
+  reporter: [
+    ['github'],
+    ['junit', { outputFile: 'results/junit.xml' }],
+    ['html', { open: 'never' }],
+  ],
   use: {
     baseURL: 'https://www.demoblaze.com/', 
     trace: 'on',
@@ -10,8 +14,7 @@ export default defineConfig({
   },
   projects: [
     { name: 'chrome', use: { channel: 'chrome' } },
-    // { name: 'firefox', use: { browserName: 'firefox' } },
-    // { name: 'webkit', use: { browserName: 'webkit' } },
+    { name: 'firefox', use: { browserName: 'firefox' } },
   ],
 });
 

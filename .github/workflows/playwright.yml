@@ -9,70 +9,88 @@ on:
 jobs:
   e2e:
     runs-on: ubuntu-latest
-
     strategy:
       fail-fast: false
       matrix:
-        project: [ "chrome", "firefox", "webkit" ]   # match your Playwright projects
+        project: [ chrome, firefox, webkit ]
 
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Setup Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
-          cache: npm
-
-      - name: Install deps
-        run: npm ci
-
-      - name: Install Playwright browsers
-        run: npx playwright install --with-deps
-
-      # If you load env from .env locally, you can set CI secrets here instead:
-      # env:
-      #   DEMOBLAZE_USER: ${{ secrets.DEMOBLAZE_USER }}
-      #   DEMOBLAZE_PASS: ${{ secrets.DEMOBLAZE_PASS }}
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 20, cache: npm }
+      - run: npm ci
+      - run: npx playwright install --with-deps
 
       - name: Run Playwright tests
-        env:
-          # Keep or tweak these to match your config
-          PWVIDEO: on
         run: npx playwright test --project=${{ matrix.project }}
 
-      - name: Upload HTML report
+      - name: Upload JUnit for ${{ matrix.project }}
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: junit-${{ matrix.project }}
+          path: results/junit.xml
+
+      - name: Upload HTML report (${{ matrix.project }})
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: playwright-report-${{ matrix.project }}
           path: playwright-report/
-          retention-days: 7
 
-      - name: Upload test results (videos, traces, screenshots)
+      - name: Upload test-results (${{ matrix.project }})
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: test-results-${{ matrix.project }}
           path: test-results/
-          retention-days: 7
 
+      # --- Publish test results ---
   publish-report:
     needs: e2e
     if: always()
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/download-artifact@v4
+
+      # Download all junit-* artifacts into results/
+      - name: Download JUnit artifacts
+        uses: actions/download-artifact@v4
         with:
-          name: playwright-report-chrome     # or pick one artifact to publish
-          path: ./_site
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+          pattern: junit-*
+          path: results
+          merge-multiple: true
+
+      # PR comment & check summary using all JUnit files
+      - name: Publish unit test results (PR comment)
+        uses: EnricoMi/publish-unit-test-result-action@v2
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./_site
+          files: results/**/*.xml
+
+      # Job summary table
+      - name: Job Summary
+        run: |
+          node -e "
+          const fs=require('fs'), gl=require('glob');
+          const files=gl.sync('results/**/*.xml');
+          let total=0, failed=0, skipped=0;
+          for (const f of files) {
+            const xml=fs.readFileSync(f,'utf8');
+            total  += (xml.match(/<testcase /g)||[]).length;
+            failed += (xml.match(/<failure /g)||[]).length + (xml.match(/<error /g)||[]).length;
+            skipped+= (xml.match(/<skipped/g)||[]).length;
+          }
+          const passed=total-failed-skipped;
+          const md=[
+            '# Playwright Summary',
+            '',
+            '| Total | Passed | Failed | Skipped |',
+            '|------:|------:|------:|--------:|',
+            `| ${total} | ${passed} | ${failed} | ${skipped} |`
+          ].join('\\n');
+          fs.writeFileSync(process.env.GITHUB_STEP_SUMMARY, md);
+          "
+
 
 
 

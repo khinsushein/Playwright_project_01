@@ -1,4 +1,6 @@
 ![Static Badge](https://img.shields.io/badge/Playwright-1.55.1-blue)
+![tests](https://img.shields.io/github/actions/workflow/status/khinsushein/Playwright_project_01/playwright.yml?label=tests)
+
 
 
 # Project 1 – Automation Testing for Authentication & Shopping Flow
