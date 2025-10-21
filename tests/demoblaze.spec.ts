@@ -1,5 +1,7 @@
-import { test, expect, Page } from '@playwright/test';
+import { test, expect, Page, request, APIRequestContext } from '@playwright/test';
 import { addToCartWithAlertOrFallback } from '../tests/helpers/demoblaze.ts';
+import { getEntries } from './helpers/demoblaze'; 
+
 
 // Simple helper to handle the site's alert popups
 async function expectAlert(page: Page, matcher: RegExp, action: () => Promise<void>) {
@@ -253,5 +255,37 @@ test('Negative: login with wrong password – shows an error', async ({ page }) 
   expect(loginMsg).toMatch(/wrong password/i); // or /(wrong password|does not exist)/i
 });
 
-  
+test('API test - Get product list', async ({ request }) => {
+  const items = await getEntries(request);
+  expect(items.length).toBeGreaterThan(0);
+});
+
+test('API test - Check for specific item in product list', async ({ request }) => {
+  const items = await getEntries(request);
+  const itemNames = items.map((p: any) => p.title);
+  expect(itemNames).toContain('Sony vaio i5');
+});
+
+test('API test - Get categories', async ({ request }) => {
+  const items = await getEntries(request);
+  const categories = Array.from(new Set(items.map((p: any) => p.cat)));
+  expect(categories.length).toBeGreaterThan(0);
+  expect(categories).toContain('notebook');
+  expect(categories).toContain('phone');
+});
+
+test('API test - Get item details by id (first product) - POST /view - unique', async ({ request }) => {
+  const items = await getEntries(request);
+  const firstProduct = items[0];
+  const detailsResponse = await request.post('https://api.demoblaze.com/view', {
+    data: { id: firstProduct.id }
   });
+  expect(detailsResponse.ok()).toBeTruthy();
+  const detailsData = await detailsResponse.json();
+  expect(detailsData.title).toBe(firstProduct.title);
+});
+
+}); // test.describe('Demoblaze API tests', () => { ... })
+
+
+

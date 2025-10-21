@@ -29,9 +29,16 @@ ________________________________________
   - Login with wrong password
 
 
-#### 🧱 **Architecture**
+####   **Architecture**
 ```md
 ## Architecture
 
 - **Page Object Model**: Centralized selectors in `pages/LoginPage.ts` for maintainability.
 - **CI/CD Ready**: Supports environment-based secrets, artifacts, and selective test runs.
+
+####   **Added API endpoints test**
+```md
+  - POST /view	Ability to chain API calls and validate response relationships (advanced).
+  - GET /entries	Basic endpoint reachability and schema check.
+  - “Check for specific item”	Data validation and use of array methods in JS/TS.
+  - “Get categories”	Logic, data extraction, and assertions on collections.

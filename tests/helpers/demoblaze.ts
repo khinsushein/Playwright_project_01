@@ -1,5 +1,6 @@
 // helpers/demoblaze.ts
 import { Page, expect } from '@playwright/test';
+import { APIRequestContext, APIResponse } from '@playwright/test';
 
 // Click "Add to cart" and wait for the alert (preferred),
 // otherwise fall back to network + cart verification.
@@ -39,4 +40,28 @@ export async function addToCartWithAlertOrFallback(page: Page, productName: stri
 
   const row = page.locator('#tbodyid tr', { hasText: productName });
   await expect(row).toBeVisible({ timeout: 10000 }); // product present in cart = success
+
+  // API endpoint call
+  // ...existing code...
+}
+
+// Move interfaces and function export outside of the function above
+
+export interface Entry {
+  id: string;
+  name: string;
+  [key: string]: unknown;
+}
+
+export interface EntriesResponse {
+  Items: Entry[];
+  [key: string]: unknown;
+}
+
+// filepath: ..\tests\helpers\demoblaze.ts
+export async function getEntries(request: APIRequestContext): Promise<any[]> {
+  const response = await request.get('https://api.demoblaze.com/entries');
+  if (!response.ok()) throw new Error('Failed to fetch entries');
+  const data = await response.json();
+  return data.Items || [];
 }
