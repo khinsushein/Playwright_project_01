@@ -6,8 +6,8 @@
   },
   "devDependencies": {
     "@playwright/test": "^1.55.1"
+  },
+  "dependencies": {
+    "glob": "^11.0.3"
   }
 }
-
-
-

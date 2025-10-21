@@ -96,23 +96,5 @@ jobs:
           ].join('\\n');
           fs.writeFileSync(process.env.GITHUB_STEP_SUMMARY, md);
           "
-          # Removed invalid matrix context usage; specify project(s) directly if needed
-          - name: Run Playwright tests (chromium)
-            run: npx playwright test --project=chromium --base-url=https://www.demoblaze.com
-          - name: Run Playwright tests (firefox)
-            run: npx playwright test --project=firefox --base-url=https://www.demoblaze.com
-            - name: List files for diagnostics
-              if: always()
-              run: |
-                echo "== ls -R . =="
-                ls -R .
-                echo "== ls results =="
-                ls -R results || true
-                echo "== ls playwright-report =="
-                ls -R playwright-report || true
-                echo "== ls test-results =="
-                ls -R test-results || true
-                env:
-                BASE_URL: https://www.demoblaze.com
-
+          
 
