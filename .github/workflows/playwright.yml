@@ -12,16 +12,20 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        project: [ chrome, firefox]
+        project: [chromium, firefox]
 
     steps:
       - uses: actions/checkout@v4
+
       - uses: actions/setup-node@v4
-        with: { node-version: 20, cache: npm }
+        with:
+          node-version: 20
+          cache: npm
+
       - run: npm ci
       - run: npx playwright install --with-deps
 
-      - name: Run Playwright tests
+      - name: Run Playwright tests (${{ matrix.project }})
         run: npx playwright test --project=${{ matrix.project }}
 
       - name: Upload JUnit for ${{ matrix.project }}
@@ -45,7 +49,6 @@ jobs:
           name: test-results-${{ matrix.project }}
           path: test-results/
 
-      # --- Publish test results ---
   publish-report:
     needs: e2e
     if: always()
@@ -53,7 +56,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      # Download all junit-* artifacts into results/
       - name: Download JUnit artifacts
         uses: actions/download-artifact@v4
         with:
@@ -61,13 +63,11 @@ jobs:
           path: results
           merge-multiple: true
 
-      # PR comment & check summary using all JUnit files
       - name: Publish unit test results (PR comment)
         uses: EnricoMi/publish-unit-test-result-action@v2
         with:
           files: results/**/*.xml
 
-      # Job summary table
       - name: Job Summary
         run: |
           node -e "
@@ -90,139 +90,3 @@ jobs:
           ].join('\\n');
           fs.writeFileSync(process.env.GITHUB_STEP_SUMMARY, md);
           "
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# name: Playwright E2E
-
-# on:
-#   push:
-#     branches: [ main, master ]
-#   pull_request:
-#     branches: [ main, master ]
-#   # Optional: nightly full run
-#   schedule:
-#     - cron: '0 2 * * *' # 02:00 UTC daily
-
-# jobs:
-#   smoke:
-#     name: Smoke (Chromium, Sign &/or Fax)
-#     runs-on: ubuntu-latest
-#     timeout-minutes: 30
-
-#     steps:
-#       - uses: actions/checkout@v4
-
-#       - uses: actions/setup-node@v4
-#         with:
-#           node-version: 20
-
-#       # Cache node_modules for faster builds
-#       - name: Cache npm
-#         uses: actions/cache@v4
-#         with:
-#           path: |
-#             ~/.npm
-#             node_modules
-#           key: ${{ runner.os }}-npm-${{ hashFiles('package-lock.json') }}
-#           restore-keys: |
-#             ${{ runner.os }}-npm-
-
-#       - name: Install dependencies
-#         run: npm ci
-
-#       - name: Install Playwright browsers
-#         run: npx playwright install --with-deps
-
-#       - name: Run smoke on Chromium
-#         env:
-#           TEST_USER_EMAIL: ${{ secrets.TEST_USER_EMAIL }}
-#           TEST_USER_PASSWORD: ${{ secrets.TEST_USER_PASSWORD }}
-#         run: |
-#           # Example: run @smoke-tagged tests only, on Chromium Sign project
-#           npx playwright test -g "@smoke" --project=chromium-sign
-#           # Optionally also run Fax smoke:
-#           # npx playwright test -g "@smoke" --project=chromium-fax
-
-#       - name: Upload Playwright report
-#         if: always()
-#         uses: actions/upload-artifact@v4
-#         with:
-#           name: playwright-report-smoke
-#           path: playwright-report
-#           retention-days: 14
-
-#       - name: Upload traces & videos
-#         if: failure() || cancelled()
-#         uses: actions/upload-artifact@v4
-#         with:
-#           name: playwright-artifacts-smoke
-#           path: |
-#             test-results/**/*
-#             playwright-report/data/**
-#           retention-days: 14
-
-#   # Optional: full regression (Chromium + Firefox) on schedule
-#   full:
-#     if: github.event_name == 'schedule'
-#     name: Full (Chromium + Firefox)
-#     runs-on: ubuntu-latest
-#     timeout-minutes: 60
-#     steps:
-#       - uses: actions/checkout@v4
-#       - uses: actions/setup-node@v4
-#         with:
-#           node-version: 20
-#       - run: npm ci
-#       - run: npx playwright install --with-deps
-#       - name: Run full suite
-#         env:
-#           TEST_USER_EMAIL: ${{ secrets.TEST_USER_EMAIL }}
-#           TEST_USER_PASSWORD: ${{ secrets.TEST_USER_PASSWORD }}
-#         run: |
-#           npx playwright test --project=chromium-sign
-#           npx playwright test --project=firefox-sign
-#           # Optionally add fax here too
-#           # npx playwright test --project=chromium-fax
-#       - name: Upload Playwright report
-#         if: always()
-#         uses: actions/upload-artifact@v4
-#         with:
-#           name: playwright-report-full
-#           path: playwright-report
-#           retention-days: 14

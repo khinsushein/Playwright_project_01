@@ -1,22 +1,19 @@
-import { defineConfig } from '@playwright/test';
+import { defineConfig, devices } from '@playwright/test';
 
 export default defineConfig({
+  retries: 1,
   reporter: [
-    ['github'],
+    ['list'],
     ['junit', { outputFile: 'results/junit.xml' }],
-    ['html', { open: 'never' }],
+    ['html', { open: 'never', outputFolder: 'playwright-report' }],
   ],
-  use: {
-    baseURL: 'https://www.demoblaze.com/', 
-    trace: 'on',
-    screenshot: 'on',
-    video: 'on', // you asked for videos even on success
-  },
   projects: [
-    { name: 'chrome', use: { channel: 'chrome' } },
-    { name: 'firefox', use: { browserName: 'firefox' } },
+    { name: 'chromium', use: { ...devices['Desktop Chrome'] } },
+    { name: 'firefox',  use: { ...devices['Desktop Firefox'] } },
   ],
+  outputDir: 'test-results',
 });
+
 
 
 
