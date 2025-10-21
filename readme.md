@@ -45,15 +45,15 @@ ________________________________________
 - **Page Object Model**: Centralized selectors in `pages/LoginPage.ts` for maintainability.
 - **CI/CD Ready**: Supports environment-based secrets, artifacts, and selective test runs.
 
-## Author
-[Khin Su Shein] — QA Automation Engineer  
-Based in France, open to Luxembourg/Switzerland roles
-
 ## Playwright API + UI Tests for Demoblaze
 
 [![Playwright CI](https://github.com/khinsushein/Playwright_project_01/actions/workflows/playwright.yml/badge.svg?branch=main)](https://github.com/khinsushein/Playwright_project_01/actions/workflows/playwright.yml)
 
 ## HTML report
 📄 [Download latest HTML report](https://github.com/khinsushein/Playwright_project_01/actions)
+
+## Author
+[Khin Su Shein] — QA Automation Engineer  
+Based in France, open to Luxembourg/Switzerland roles
 
 
