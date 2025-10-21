@@ -28,10 +28,10 @@ ________________________________________
   - Login with non-existent user
   - Login with wrong password
 - **Added API endpoints test**
-  - POST /view	Ability to chain API calls and validate response relationships (advanced).
-  - GET /entries	Basic endpoint reachability and schema check.
-  - “Check for specific item”	Data validation and use of array methods in JS/TS.
-  - “Get categories”	Logic, data extraction, and assertions on collections.
+  - GET /entries – fetch all product items
+  - POST /view – verify product details by ID
+  - Category extraction and validation
+  - Schema and data consistency checks
 
 
 ####   **Architecture**
