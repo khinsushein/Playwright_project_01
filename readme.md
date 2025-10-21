@@ -41,3 +41,6 @@ ________________________________________
 - **Page Object Model**: Centralized selectors in `pages/LoginPage.ts` for maintainability.
 - **CI/CD Ready**: Supports environment-based secrets, artifacts, and selective test runs.
 
+## Author
+[Khin Su Shein] — QA Automation Engineer  
+Based in France, open to Luxembourg/Switzerland roles
