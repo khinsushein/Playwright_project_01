@@ -1,11 +1,19 @@
+// playwright.config.ts
 import { defineConfig, devices } from '@playwright/test';
 
+const baseURL = process.env.BASE_URL ?? 'https://www.demoblaze.com';
+
 export default defineConfig({
-  retries: 1,
+  use: {
+    baseURL,                  // <-- enables page.goto('/') everywhere
+    trace: 'on',
+    video: 'on',
+    screenshot: 'on',
+  },
   reporter: [
     ['list'],
     ['junit', { outputFile: 'results/junit.xml' }],
-    ['html', { open: 'never', outputFolder: 'playwright-report' }],
+    ['html',  { open: 'never', outputFolder: 'playwright-report' }],
   ],
   projects: [
     { name: 'chromium', use: { ...devices['Desktop Chrome'] } },
@@ -13,6 +21,7 @@ export default defineConfig({
   ],
   outputDir: 'test-results',
 });
+
 
 
 

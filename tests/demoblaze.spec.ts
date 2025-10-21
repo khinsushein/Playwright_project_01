@@ -237,7 +237,8 @@ test('Negative: login with wrong password – shows an error', async ({ page }) 
   await signUpModal.locator('#sign-password').fill(goodPass);
 
   const signUpMsg = await clickAndWaitAlert(page, async () => {
-    await signUpModal.getByRole('button', { name: 'Sign up', exact: true }).click();
+    await signUpModal.locator('button', { hasText: 'Sign up' }).click();
+    await page.waitForTimeout(500); // Only if needed, prefer explicit waits
   });
   expect(signUpMsg).toMatch(/sign up successful|this user already exist/i);
 

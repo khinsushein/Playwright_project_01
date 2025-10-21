@@ -1,387 +1,387 @@
-<testsuites id="" name="" tests="70" failures="0" skipped="0" errors="0" time="85.93710699999998">
-<testsuite name="e2e\example.spec.ts" timestamp="2025-10-21T01:02:57.834Z" hostname="chrome" tests="2" failures="0" skipped="0" time="4.713" errors="0">
-<testcase name="has title" classname="e2e\example.spec.ts" time="2.278">
+<testsuites id="" name="" tests="70" failures="0" skipped="0" errors="0" time="47.86529">
+<testsuite name="e2e\example.spec.ts" timestamp="2025-10-21T01:56:51.574Z" hostname="chromium" tests="2" failures="0" skipped="0" time="2.46" errors="0">
+<testcase name="has title" classname="e2e\example.spec.ts" time="0.999">
 <system-out>
 <![CDATA[
-[[ATTACHMENT|..\test-results\e2e-example-has-title-chrome\test-finished-1.png]]
+[[ATTACHMENT|..\test-results\e2e-example-has-title-chromium\test-finished-1.png]]
 
-[[ATTACHMENT|..\test-results\e2e-example-has-title-chrome\video.webm]]
+[[ATTACHMENT|..\test-results\e2e-example-has-title-chromium\video.webm]]
 
-[[ATTACHMENT|..\test-results\e2e-example-has-title-chrome\trace.zip]]
+[[ATTACHMENT|..\test-results\e2e-example-has-title-chromium\trace.zip]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="get started link" classname="e2e\example.spec.ts" time="2.435">
+<testcase name="get started link" classname="e2e\example.spec.ts" time="1.461">
 <system-out>
 <![CDATA[
-[[ATTACHMENT|..\test-results\e2e-example-get-started-link-chrome\test-finished-1.png]]
+[[ATTACHMENT|..\test-results\e2e-example-get-started-link-chromium\test-finished-1.png]]
 
-[[ATTACHMENT|..\test-results\e2e-example-get-started-link-chrome\video.webm]]
+[[ATTACHMENT|..\test-results\e2e-example-get-started-link-chromium\video.webm]]
 
-[[ATTACHMENT|..\test-results\e2e-example-get-started-link-chrome\trace.zip]]
+[[ATTACHMENT|..\test-results\e2e-example-get-started-link-chromium\trace.zip]]
 ]]>
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="tests\demoblaze.spec.ts" timestamp="2025-10-21T01:02:57.834Z" hostname="chrome" tests="7" failures="0" skipped="0" time="35.559" errors="0">
-<testcase name="Demoblaze e2e › Login → add to cart → place order → receipt → logout" classname="tests\demoblaze.spec.ts" time="22.244">
+<testsuite name="tests\demoblaze.spec.ts" timestamp="2025-10-21T01:56:51.574Z" hostname="chromium" tests="7" failures="0" skipped="0" time="19.41" errors="0">
+<testcase name="Demoblaze e2e › Login → add to cart → place order → receipt → logout" classname="tests\demoblaze.spec.ts" time="12.835">
 <system-out>
 <![CDATA[Clicked login button
 
-[[ATTACHMENT|..\test-results\tests-demoblaze-Demoblaze--1528a-ce-order-→-receipt-→-logout-chrome\test-finished-1.png]]
+[[ATTACHMENT|..\test-results\tests-demoblaze-Demoblaze--1528a-ce-order-→-receipt-→-logout-chromium\test-finished-1.png]]
 
-[[ATTACHMENT|..\test-results\tests-demoblaze-Demoblaze--1528a-ce-order-→-receipt-→-logout-chrome\test-finished-2.png]]
+[[ATTACHMENT|..\test-results\tests-demoblaze-Demoblaze--1528a-ce-order-→-receipt-→-logout-chromium\test-finished-2.png]]
 
-[[ATTACHMENT|..\test-results\tests-demoblaze-Demoblaze--1528a-ce-order-→-receipt-→-logout-chrome\video.webm]]
+[[ATTACHMENT|..\test-results\tests-demoblaze-Demoblaze--1528a-ce-order-→-receipt-→-logout-chromium\video.webm]]
 
-[[ATTACHMENT|..\test-results\tests-demoblaze-Demoblaze--1528a-ce-order-→-receipt-→-logout-chrome\trace.zip]]
+[[ATTACHMENT|..\test-results\tests-demoblaze-Demoblaze--1528a-ce-order-→-receipt-→-logout-chromium\trace.zip]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Demoblaze e2e › Negative: login for non-existent user shows an error" classname="tests\demoblaze.spec.ts" time="4.177">
+<testcase name="Demoblaze e2e › Negative: login for non-existent user shows an error" classname="tests\demoblaze.spec.ts" time="2.121">
 <system-out>
 <![CDATA[⚠️ Alert message: User does not exist.
 
-[[ATTACHMENT|..\test-results\tests-demoblaze-Demoblaze--e5bc7-xistent-user-shows-an-error-chrome\test-finished-1.png]]
+[[ATTACHMENT|..\test-results\tests-demoblaze-Demoblaze--e5bc7-xistent-user-shows-an-error-chromium\test-finished-1.png]]
 
-[[ATTACHMENT|..\test-results\tests-demoblaze-Demoblaze--e5bc7-xistent-user-shows-an-error-chrome\video.webm]]
+[[ATTACHMENT|..\test-results\tests-demoblaze-Demoblaze--e5bc7-xistent-user-shows-an-error-chromium\video.webm]]
 
-[[ATTACHMENT|..\test-results\tests-demoblaze-Demoblaze--e5bc7-xistent-user-shows-an-error-chrome\trace.zip]]
+[[ATTACHMENT|..\test-results\tests-demoblaze-Demoblaze--e5bc7-xistent-user-shows-an-error-chromium\trace.zip]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Demoblaze e2e › Negative: login with wrong password – shows an error" classname="tests\demoblaze.spec.ts" time="4.962">
+<testcase name="Demoblaze e2e › Negative: login with wrong password – shows an error" classname="tests\demoblaze.spec.ts" time="3.215">
 <system-out>
 <![CDATA[
-[[ATTACHMENT|..\test-results\tests-demoblaze-Demoblaze--d23b4-g-password-–-shows-an-error-chrome\test-finished-1.png]]
+[[ATTACHMENT|..\test-results\tests-demoblaze-Demoblaze--d23b4-g-password-–-shows-an-error-chromium\test-finished-1.png]]
 
-[[ATTACHMENT|..\test-results\tests-demoblaze-Demoblaze--d23b4-g-password-–-shows-an-error-chrome\video.webm]]
+[[ATTACHMENT|..\test-results\tests-demoblaze-Demoblaze--d23b4-g-password-–-shows-an-error-chromium\video.webm]]
 
-[[ATTACHMENT|..\test-results\tests-demoblaze-Demoblaze--d23b4-g-password-–-shows-an-error-chrome\trace.zip]]
+[[ATTACHMENT|..\test-results\tests-demoblaze-Demoblaze--d23b4-g-password-–-shows-an-error-chromium\trace.zip]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Demoblaze e2e › API test - Get product list" classname="tests\demoblaze.spec.ts" time="2.941">
+<testcase name="Demoblaze e2e › API test - Get product list" classname="tests\demoblaze.spec.ts" time="0.497">
 <system-out>
 <![CDATA[
-[[ATTACHMENT|..\test-results\tests-demoblaze-Demoblaze-e2e-API-test---Get-product-list-chrome\trace.zip]]
+[[ATTACHMENT|..\test-results\tests-demoblaze-Demoblaze-e2e-API-test---Get-product-list-chromium\trace.zip]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Demoblaze e2e › API test - Check for specific item in product list" classname="tests\demoblaze.spec.ts" time="0.457">
+<testcase name="Demoblaze e2e › API test - Check for specific item in product list" classname="tests\demoblaze.spec.ts" time="0.205">
 <system-out>
 <![CDATA[
-[[ATTACHMENT|..\test-results\tests-demoblaze-Demoblaze--e4184-ecific-item-in-product-list-chrome\trace.zip]]
+[[ATTACHMENT|..\test-results\tests-demoblaze-Demoblaze--e4184-ecific-item-in-product-list-chromium\trace.zip]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Demoblaze e2e › API test - Get categories" classname="tests\demoblaze.spec.ts" time="0.29">
+<testcase name="Demoblaze e2e › API test - Get categories" classname="tests\demoblaze.spec.ts" time="0.196">
 <system-out>
 <![CDATA[
-[[ATTACHMENT|..\test-results\tests-demoblaze-Demoblaze-e2e-API-test---Get-categories-chrome\trace.zip]]
+[[ATTACHMENT|..\test-results\tests-demoblaze-Demoblaze-e2e-API-test---Get-categories-chromium\trace.zip]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Demoblaze e2e › API test - Get item details by id (first product) - POST /view - unique" classname="tests\demoblaze.spec.ts" time="0.488">
+<testcase name="Demoblaze e2e › API test - Get item details by id (first product) - POST /view - unique" classname="tests\demoblaze.spec.ts" time="0.341">
 <system-out>
 <![CDATA[
-[[ATTACHMENT|..\test-results\tests-demoblaze-Demoblaze--986ef-roduct---POST-view---unique-chrome\trace.zip]]
+[[ATTACHMENT|..\test-results\tests-demoblaze-Demoblaze--986ef-roduct---POST-view---unique-chromium\trace.zip]]
 ]]>
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="tests\example.spec.ts" timestamp="2025-10-21T01:02:57.834Z" hostname="chrome" tests="2" failures="0" skipped="0" time="4.265" errors="0">
-<testcase name="has title" classname="tests\example.spec.ts" time="1.944">
+<testsuite name="tests\example.spec.ts" timestamp="2025-10-21T01:56:51.574Z" hostname="chromium" tests="2" failures="0" skipped="0" time="2.514" errors="0">
+<testcase name="has title" classname="tests\example.spec.ts" time="1.01">
 <system-out>
 <![CDATA[
-[[ATTACHMENT|..\test-results\tests-example-has-title-chrome\test-finished-1.png]]
+[[ATTACHMENT|..\test-results\tests-example-has-title-chromium\test-finished-1.png]]
 
-[[ATTACHMENT|..\test-results\tests-example-has-title-chrome\video.webm]]
+[[ATTACHMENT|..\test-results\tests-example-has-title-chromium\video.webm]]
 
-[[ATTACHMENT|..\test-results\tests-example-has-title-chrome\trace.zip]]
+[[ATTACHMENT|..\test-results\tests-example-has-title-chromium\trace.zip]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="get started link" classname="tests\example.spec.ts" time="2.321">
+<testcase name="get started link" classname="tests\example.spec.ts" time="1.504">
 <system-out>
 <![CDATA[
-[[ATTACHMENT|..\test-results\tests-example-get-started-link-chrome\test-finished-1.png]]
+[[ATTACHMENT|..\test-results\tests-example-get-started-link-chromium\test-finished-1.png]]
 
-[[ATTACHMENT|..\test-results\tests-example-get-started-link-chrome\video.webm]]
+[[ATTACHMENT|..\test-results\tests-example-get-started-link-chromium\video.webm]]
 
-[[ATTACHMENT|..\test-results\tests-example-get-started-link-chrome\trace.zip]]
-]]>
-</system-out>
-</testcase>
-</testsuite>
-<testsuite name="tests-examples\demo-todo-app.spec.ts" timestamp="2025-10-21T01:02:57.834Z" hostname="chrome" tests="24" failures="0" skipped="0" time="48.264" errors="0">
-<testcase name="New Todo › should allow me to add todo items" classname="tests-examples\demo-todo-app.spec.ts" time="1.459">
-<system-out>
-<![CDATA[
-[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-cb93c--allow-me-to-add-todo-items-chrome\test-finished-1.png]]
-
-[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-cb93c--allow-me-to-add-todo-items-chrome\video.webm]]
-
-[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-cb93c--allow-me-to-add-todo-items-chrome\trace.zip]]
-]]>
-</system-out>
-</testcase>
-<testcase name="New Todo › should clear text input field when an item is added" classname="tests-examples\demo-todo-app.spec.ts" time="1.08">
-<system-out>
-<![CDATA[
-[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-86427-field-when-an-item-is-added-chrome\test-finished-1.png]]
-
-[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-86427-field-when-an-item-is-added-chrome\video.webm]]
-
-[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-86427-field-when-an-item-is-added-chrome\trace.zip]]
-]]>
-</system-out>
-</testcase>
-<testcase name="New Todo › should append new items to the bottom of the list" classname="tests-examples\demo-todo-app.spec.ts" time="1.389">
-<system-out>
-<![CDATA[
-[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-de15b-s-to-the-bottom-of-the-list-chrome\test-finished-1.png]]
-
-[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-de15b-s-to-the-bottom-of-the-list-chrome\video.webm]]
-
-[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-de15b-s-to-the-bottom-of-the-list-chrome\trace.zip]]
-]]>
-</system-out>
-</testcase>
-<testcase name="Mark all as completed › should allow me to mark all items as completed" classname="tests-examples\demo-todo-app.spec.ts" time="1.334">
-<system-out>
-<![CDATA[
-[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-f9478-mark-all-items-as-completed-chrome\test-finished-1.png]]
-
-[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-f9478-mark-all-items-as-completed-chrome\video.webm]]
-
-[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-f9478-mark-all-items-as-completed-chrome\trace.zip]]
-]]>
-</system-out>
-</testcase>
-<testcase name="Mark all as completed › should allow me to clear the complete state of all items" classname="tests-examples\demo-todo-app.spec.ts" time="1.377">
-<system-out>
-<![CDATA[
-[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-3a74f-complete-state-of-all-items-chrome\test-finished-1.png]]
-
-[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-3a74f-complete-state-of-all-items-chrome\video.webm]]
-
-[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-3a74f-complete-state-of-all-items-chrome\trace.zip]]
-]]>
-</system-out>
-</testcase>
-<testcase name="Mark all as completed › complete all checkbox should update state when items are completed / cleared" classname="tests-examples\demo-todo-app.spec.ts" time="1.934">
-<system-out>
-<![CDATA[
-[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-1b069-items-are-completed-cleared-chrome\test-finished-1.png]]
-
-[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-1b069-items-are-completed-cleared-chrome\video.webm]]
-
-[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-1b069-items-are-completed-cleared-chrome\trace.zip]]
-]]>
-</system-out>
-</testcase>
-<testcase name="Item › should allow me to mark items as complete" classname="tests-examples\demo-todo-app.spec.ts" time="1.331">
-<system-out>
-<![CDATA[
-[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-f23ad-e-to-mark-items-as-complete-chrome\test-finished-1.png]]
-
-[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-f23ad-e-to-mark-items-as-complete-chrome\video.webm]]
-
-[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-f23ad-e-to-mark-items-as-complete-chrome\trace.zip]]
-]]>
-</system-out>
-</testcase>
-<testcase name="Item › should allow me to un-mark items as complete" classname="tests-examples\demo-todo-app.spec.ts" time="1.697">
-<system-out>
-<![CDATA[
-[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-7e469-o-un-mark-items-as-complete-chrome\test-finished-1.png]]
-
-[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-7e469-o-un-mark-items-as-complete-chrome\video.webm]]
-
-[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-7e469-o-un-mark-items-as-complete-chrome\trace.zip]]
-]]>
-</system-out>
-</testcase>
-<testcase name="Item › should allow me to edit an item" classname="tests-examples\demo-todo-app.spec.ts" time="2.689">
-<system-out>
-<![CDATA[
-[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-18e17-ld-allow-me-to-edit-an-item-chrome\test-finished-1.png]]
-
-[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-18e17-ld-allow-me-to-edit-an-item-chrome\video.webm]]
-
-[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-18e17-ld-allow-me-to-edit-an-item-chrome\trace.zip]]
-]]>
-</system-out>
-</testcase>
-<testcase name="Editing › should hide other controls when editing" classname="tests-examples\demo-todo-app.spec.ts" time="1.356">
-<system-out>
-<![CDATA[
-[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-136f6-other-controls-when-editing-chrome\test-finished-1.png]]
-
-[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-136f6-other-controls-when-editing-chrome\video.webm]]
-
-[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-136f6-other-controls-when-editing-chrome\trace.zip]]
-]]>
-</system-out>
-</testcase>
-<testcase name="Editing › should save edits on blur" classname="tests-examples\demo-todo-app.spec.ts" time="2.649">
-<system-out>
-<![CDATA[
-[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-c7017-g-should-save-edits-on-blur-chrome\test-finished-1.png]]
-
-[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-c7017-g-should-save-edits-on-blur-chrome\video.webm]]
-
-[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-c7017-g-should-save-edits-on-blur-chrome\trace.zip]]
-]]>
-</system-out>
-</testcase>
-<testcase name="Editing › should trim entered text" classname="tests-examples\demo-todo-app.spec.ts" time="1.804">
-<system-out>
-<![CDATA[
-[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-f1b93-ng-should-trim-entered-text-chrome\test-finished-1.png]]
-
-[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-f1b93-ng-should-trim-entered-text-chrome\video.webm]]
-
-[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-f1b93-ng-should-trim-entered-text-chrome\trace.zip]]
-]]>
-</system-out>
-</testcase>
-<testcase name="Editing › should remove the item if an empty text string was entered" classname="tests-examples\demo-todo-app.spec.ts" time="2.334">
-<system-out>
-<![CDATA[
-[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-3f7df-pty-text-string-was-entered-chrome\test-finished-1.png]]
-
-[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-3f7df-pty-text-string-was-entered-chrome\video.webm]]
-
-[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-3f7df-pty-text-string-was-entered-chrome\trace.zip]]
-]]>
-</system-out>
-</testcase>
-<testcase name="Editing › should cancel edits on escape" classname="tests-examples\demo-todo-app.spec.ts" time="1.75">
-<system-out>
-<![CDATA[
-[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-b0dfe-ould-cancel-edits-on-escape-chrome\test-finished-1.png]]
-
-[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-b0dfe-ould-cancel-edits-on-escape-chrome\video.webm]]
-
-[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-b0dfe-ould-cancel-edits-on-escape-chrome\trace.zip]]
-]]>
-</system-out>
-</testcase>
-<testcase name="Counter › should display the current number of todo items" classname="tests-examples\demo-todo-app.spec.ts" time="2.403">
-<system-out>
-<![CDATA[
-[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-decb7-urrent-number-of-todo-items-chrome\test-finished-1.png]]
-
-[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-decb7-urrent-number-of-todo-items-chrome\video.webm]]
-
-[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-decb7-urrent-number-of-todo-items-chrome\trace.zip]]
-]]>
-</system-out>
-</testcase>
-<testcase name="Clear completed button › should display the correct text" classname="tests-examples\demo-todo-app.spec.ts" time="4.529">
-<system-out>
-<![CDATA[
-[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-a043b-ld-display-the-correct-text-chrome\test-finished-1.png]]
-
-[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-a043b-ld-display-the-correct-text-chrome\video.webm]]
-
-[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-a043b-ld-display-the-correct-text-chrome\trace.zip]]
-]]>
-</system-out>
-</testcase>
-<testcase name="Clear completed button › should remove completed items when clicked" classname="tests-examples\demo-todo-app.spec.ts" time="1.816">
-<system-out>
-<![CDATA[
-[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-e3f41-ompleted-items-when-clicked-chrome\test-finished-1.png]]
-
-[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-e3f41-ompleted-items-when-clicked-chrome\video.webm]]
-
-[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-e3f41-ompleted-items-when-clicked-chrome\trace.zip]]
-]]>
-</system-out>
-</testcase>
-<testcase name="Clear completed button › should be hidden when there are no items that are completed" classname="tests-examples\demo-todo-app.spec.ts" time="2.458">
-<system-out>
-<![CDATA[
-[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-8ddc4-no-items-that-are-completed-chrome\test-finished-1.png]]
-
-[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-8ddc4-no-items-that-are-completed-chrome\video.webm]]
-
-[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-8ddc4-no-items-that-are-completed-chrome\trace.zip]]
-]]>
-</system-out>
-</testcase>
-<testcase name="Persistence › should persist its data" classname="tests-examples\demo-todo-app.spec.ts" time="2.007">
-<system-out>
-<![CDATA[
-[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-ebbe1-nce-should-persist-its-data-chrome\test-finished-1.png]]
-
-[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-ebbe1-nce-should-persist-its-data-chrome\video.webm]]
-
-[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-ebbe1-nce-should-persist-its-data-chrome\trace.zip]]
-]]>
-</system-out>
-</testcase>
-<testcase name="Routing › should allow me to display active items" classname="tests-examples\demo-todo-app.spec.ts" time="1.692">
-<system-out>
-<![CDATA[
-[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-64101--me-to-display-active-items-chrome\test-finished-1.png]]
-
-[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-64101--me-to-display-active-items-chrome\video.webm]]
-
-[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-64101--me-to-display-active-items-chrome\trace.zip]]
-]]>
-</system-out>
-</testcase>
-<testcase name="Routing › should respect the back button" classname="tests-examples\demo-todo-app.spec.ts" time="3.419">
-<system-out>
-<![CDATA[
-[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-7cf8c-uld-respect-the-back-button-chrome\test-finished-1.png]]
-
-[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-7cf8c-uld-respect-the-back-button-chrome\video.webm]]
-
-[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-7cf8c-uld-respect-the-back-button-chrome\trace.zip]]
-]]>
-</system-out>
-</testcase>
-<testcase name="Routing › should allow me to display completed items" classname="tests-examples\demo-todo-app.spec.ts" time="2.564">
-<system-out>
-<![CDATA[
-[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-4151f--to-display-completed-items-chrome\test-finished-1.png]]
-
-[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-4151f--to-display-completed-items-chrome\video.webm]]
-
-[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-4151f--to-display-completed-items-chrome\trace.zip]]
-]]>
-</system-out>
-</testcase>
-<testcase name="Routing › should allow me to display all items" classname="tests-examples\demo-todo-app.spec.ts" time="1.847">
-<system-out>
-<![CDATA[
-[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-4b396-low-me-to-display-all-items-chrome\test-finished-1.png]]
-
-[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-4b396-low-me-to-display-all-items-chrome\video.webm]]
-
-[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-4b396-low-me-to-display-all-items-chrome\trace.zip]]
-]]>
-</system-out>
-</testcase>
-<testcase name="Routing › should highlight the currently applied filter" classname="tests-examples\demo-todo-app.spec.ts" time="1.346">
-<system-out>
-<![CDATA[
-[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-ae530-he-currently-applied-filter-chrome\test-finished-1.png]]
-
-[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-ae530-he-currently-applied-filter-chrome\video.webm]]
-
-[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-ae530-he-currently-applied-filter-chrome\trace.zip]]
+[[ATTACHMENT|..\test-results\tests-example-get-started-link-chromium\trace.zip]]
 ]]>
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="e2e\example.spec.ts" timestamp="2025-10-21T01:02:57.834Z" hostname="firefox" tests="2" failures="0" skipped="0" time="6.66" errors="0">
-<testcase name="has title" classname="e2e\example.spec.ts" time="3.836">
+<testsuite name="tests-examples\demo-todo-app.spec.ts" timestamp="2025-10-21T01:56:51.574Z" hostname="chromium" tests="24" failures="0" skipped="0" time="21.033" errors="0">
+<testcase name="New Todo › should allow me to add todo items" classname="tests-examples\demo-todo-app.spec.ts" time="1.204">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-cb93c--allow-me-to-add-todo-items-chromium\test-finished-1.png]]
+
+[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-cb93c--allow-me-to-add-todo-items-chromium\video.webm]]
+
+[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-cb93c--allow-me-to-add-todo-items-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="New Todo › should clear text input field when an item is added" classname="tests-examples\demo-todo-app.spec.ts" time="0.819">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-86427-field-when-an-item-is-added-chromium\test-finished-1.png]]
+
+[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-86427-field-when-an-item-is-added-chromium\video.webm]]
+
+[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-86427-field-when-an-item-is-added-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="New Todo › should append new items to the bottom of the list" classname="tests-examples\demo-todo-app.spec.ts" time="0.885">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-de15b-s-to-the-bottom-of-the-list-chromium\test-finished-1.png]]
+
+[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-de15b-s-to-the-bottom-of-the-list-chromium\video.webm]]
+
+[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-de15b-s-to-the-bottom-of-the-list-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Mark all as completed › should allow me to mark all items as completed" classname="tests-examples\demo-todo-app.spec.ts" time="0.996">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-f9478-mark-all-items-as-completed-chromium\test-finished-1.png]]
+
+[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-f9478-mark-all-items-as-completed-chromium\video.webm]]
+
+[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-f9478-mark-all-items-as-completed-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Mark all as completed › should allow me to clear the complete state of all items" classname="tests-examples\demo-todo-app.spec.ts" time="1.021">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-3a74f-complete-state-of-all-items-chromium\test-finished-1.png]]
+
+[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-3a74f-complete-state-of-all-items-chromium\video.webm]]
+
+[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-3a74f-complete-state-of-all-items-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Mark all as completed › complete all checkbox should update state when items are completed / cleared" classname="tests-examples\demo-todo-app.spec.ts" time="1.267">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-1b069-items-are-completed-cleared-chromium\test-finished-1.png]]
+
+[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-1b069-items-are-completed-cleared-chromium\video.webm]]
+
+[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-1b069-items-are-completed-cleared-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Item › should allow me to mark items as complete" classname="tests-examples\demo-todo-app.spec.ts" time="0.977">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-f23ad-e-to-mark-items-as-complete-chromium\test-finished-1.png]]
+
+[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-f23ad-e-to-mark-items-as-complete-chromium\video.webm]]
+
+[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-f23ad-e-to-mark-items-as-complete-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Item › should allow me to un-mark items as complete" classname="tests-examples\demo-todo-app.spec.ts" time="0.891">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-7e469-o-un-mark-items-as-complete-chromium\test-finished-1.png]]
+
+[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-7e469-o-un-mark-items-as-complete-chromium\video.webm]]
+
+[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-7e469-o-un-mark-items-as-complete-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Item › should allow me to edit an item" classname="tests-examples\demo-todo-app.spec.ts" time="0.789">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-18e17-ld-allow-me-to-edit-an-item-chromium\test-finished-1.png]]
+
+[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-18e17-ld-allow-me-to-edit-an-item-chromium\video.webm]]
+
+[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-18e17-ld-allow-me-to-edit-an-item-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Editing › should hide other controls when editing" classname="tests-examples\demo-todo-app.spec.ts" time="0.767">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-136f6-other-controls-when-editing-chromium\test-finished-1.png]]
+
+[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-136f6-other-controls-when-editing-chromium\video.webm]]
+
+[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-136f6-other-controls-when-editing-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Editing › should save edits on blur" classname="tests-examples\demo-todo-app.spec.ts" time="0.771">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-c7017-g-should-save-edits-on-blur-chromium\test-finished-1.png]]
+
+[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-c7017-g-should-save-edits-on-blur-chromium\video.webm]]
+
+[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-c7017-g-should-save-edits-on-blur-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Editing › should trim entered text" classname="tests-examples\demo-todo-app.spec.ts" time="0.786">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-f1b93-ng-should-trim-entered-text-chromium\test-finished-1.png]]
+
+[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-f1b93-ng-should-trim-entered-text-chromium\video.webm]]
+
+[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-f1b93-ng-should-trim-entered-text-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Editing › should remove the item if an empty text string was entered" classname="tests-examples\demo-todo-app.spec.ts" time="0.758">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-3f7df-pty-text-string-was-entered-chromium\test-finished-1.png]]
+
+[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-3f7df-pty-text-string-was-entered-chromium\video.webm]]
+
+[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-3f7df-pty-text-string-was-entered-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Editing › should cancel edits on escape" classname="tests-examples\demo-todo-app.spec.ts" time="0.775">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-b0dfe-ould-cancel-edits-on-escape-chromium\test-finished-1.png]]
+
+[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-b0dfe-ould-cancel-edits-on-escape-chromium\video.webm]]
+
+[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-b0dfe-ould-cancel-edits-on-escape-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Counter › should display the current number of todo items" classname="tests-examples\demo-todo-app.spec.ts" time="0.644">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-decb7-urrent-number-of-todo-items-chromium\test-finished-1.png]]
+
+[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-decb7-urrent-number-of-todo-items-chromium\video.webm]]
+
+[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-decb7-urrent-number-of-todo-items-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Clear completed button › should display the correct text" classname="tests-examples\demo-todo-app.spec.ts" time="0.71">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-a043b-ld-display-the-correct-text-chromium\test-finished-1.png]]
+
+[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-a043b-ld-display-the-correct-text-chromium\video.webm]]
+
+[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-a043b-ld-display-the-correct-text-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Clear completed button › should remove completed items when clicked" classname="tests-examples\demo-todo-app.spec.ts" time="0.769">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-e3f41-ompleted-items-when-clicked-chromium\test-finished-1.png]]
+
+[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-e3f41-ompleted-items-when-clicked-chromium\video.webm]]
+
+[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-e3f41-ompleted-items-when-clicked-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Clear completed button › should be hidden when there are no items that are completed" classname="tests-examples\demo-todo-app.spec.ts" time="0.791">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-8ddc4-no-items-that-are-completed-chromium\test-finished-1.png]]
+
+[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-8ddc4-no-items-that-are-completed-chromium\video.webm]]
+
+[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-8ddc4-no-items-that-are-completed-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Persistence › should persist its data" classname="tests-examples\demo-todo-app.spec.ts" time="0.876">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-ebbe1-nce-should-persist-its-data-chromium\test-finished-1.png]]
+
+[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-ebbe1-nce-should-persist-its-data-chromium\video.webm]]
+
+[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-ebbe1-nce-should-persist-its-data-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Routing › should allow me to display active items" classname="tests-examples\demo-todo-app.spec.ts" time="0.897">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-64101--me-to-display-active-items-chromium\test-finished-1.png]]
+
+[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-64101--me-to-display-active-items-chromium\video.webm]]
+
+[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-64101--me-to-display-active-items-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Routing › should respect the back button" classname="tests-examples\demo-todo-app.spec.ts" time="0.977">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-7cf8c-uld-respect-the-back-button-chromium\test-finished-1.png]]
+
+[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-7cf8c-uld-respect-the-back-button-chromium\video.webm]]
+
+[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-7cf8c-uld-respect-the-back-button-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Routing › should allow me to display completed items" classname="tests-examples\demo-todo-app.spec.ts" time="0.865">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-4151f--to-display-completed-items-chromium\test-finished-1.png]]
+
+[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-4151f--to-display-completed-items-chromium\video.webm]]
+
+[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-4151f--to-display-completed-items-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Routing › should allow me to display all items" classname="tests-examples\demo-todo-app.spec.ts" time="0.985">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-4b396-low-me-to-display-all-items-chromium\test-finished-1.png]]
+
+[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-4b396-low-me-to-display-all-items-chromium\video.webm]]
+
+[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-4b396-low-me-to-display-all-items-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Routing › should highlight the currently applied filter" classname="tests-examples\demo-todo-app.spec.ts" time="0.813">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-ae530-he-currently-applied-filter-chromium\test-finished-1.png]]
+
+[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-ae530-he-currently-applied-filter-chromium\video.webm]]
+
+[[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-ae530-he-currently-applied-filter-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="e2e\example.spec.ts" timestamp="2025-10-21T01:56:51.574Z" hostname="firefox" tests="2" failures="0" skipped="0" time="5.204" errors="0">
+<testcase name="has title" classname="e2e\example.spec.ts" time="3.481">
 <system-out>
 <![CDATA[
 [[ATTACHMENT|..\test-results\e2e-example-has-title-firefox\test-finished-1.png]]
@@ -392,7 +392,7 @@
 ]]>
 </system-out>
 </testcase>
-<testcase name="get started link" classname="e2e\example.spec.ts" time="2.824">
+<testcase name="get started link" classname="e2e\example.spec.ts" time="1.723">
 <system-out>
 <![CDATA[
 [[ATTACHMENT|..\test-results\e2e-example-get-started-link-firefox\test-finished-1.png]]
@@ -404,8 +404,8 @@
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="tests\demoblaze.spec.ts" timestamp="2025-10-21T01:02:57.834Z" hostname="firefox" tests="7" failures="0" skipped="0" time="38.327" errors="0">
-<testcase name="Demoblaze e2e › Login → add to cart → place order → receipt → logout" classname="tests\demoblaze.spec.ts" time="24.155">
+<testsuite name="tests\demoblaze.spec.ts" timestamp="2025-10-21T01:56:51.574Z" hostname="firefox" tests="7" failures="0" skipped="0" time="21.095" errors="0">
+<testcase name="Demoblaze e2e › Login → add to cart → place order → receipt → logout" classname="tests\demoblaze.spec.ts" time="14.396">
 <system-out>
 <![CDATA[Clicked login button
 
@@ -419,7 +419,7 @@
 ]]>
 </system-out>
 </testcase>
-<testcase name="Demoblaze e2e › Negative: login for non-existent user shows an error" classname="tests\demoblaze.spec.ts" time="6.717">
+<testcase name="Demoblaze e2e › Negative: login for non-existent user shows an error" classname="tests\demoblaze.spec.ts" time="2.109">
 <system-out>
 <![CDATA[⚠️ Alert message: User does not exist.
 
@@ -431,7 +431,7 @@
 ]]>
 </system-out>
 </testcase>
-<testcase name="Demoblaze e2e › Negative: login with wrong password – shows an error" classname="tests\demoblaze.spec.ts" time="5.822">
+<testcase name="Demoblaze e2e › Negative: login with wrong password – shows an error" classname="tests\demoblaze.spec.ts" time="3.339">
 <system-out>
 <![CDATA[
 [[ATTACHMENT|..\test-results\tests-demoblaze-Demoblaze--d23b4-g-password-–-shows-an-error-firefox\test-finished-1.png]]
@@ -442,28 +442,28 @@
 ]]>
 </system-out>
 </testcase>
-<testcase name="Demoblaze e2e › API test - Get product list" classname="tests\demoblaze.spec.ts" time="0.74">
+<testcase name="Demoblaze e2e › API test - Get product list" classname="tests\demoblaze.spec.ts" time="0.499">
 <system-out>
 <![CDATA[
 [[ATTACHMENT|..\test-results\tests-demoblaze-Demoblaze-e2e-API-test---Get-product-list-firefox\trace.zip]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Demoblaze e2e › API test - Check for specific item in product list" classname="tests\demoblaze.spec.ts" time="0.239">
+<testcase name="Demoblaze e2e › API test - Check for specific item in product list" classname="tests\demoblaze.spec.ts" time="0.232">
 <system-out>
 <![CDATA[
 [[ATTACHMENT|..\test-results\tests-demoblaze-Demoblaze--e4184-ecific-item-in-product-list-firefox\trace.zip]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Demoblaze e2e › API test - Get categories" classname="tests\demoblaze.spec.ts" time="0.2">
+<testcase name="Demoblaze e2e › API test - Get categories" classname="tests\demoblaze.spec.ts" time="0.182">
 <system-out>
 <![CDATA[
 [[ATTACHMENT|..\test-results\tests-demoblaze-Demoblaze-e2e-API-test---Get-categories-firefox\trace.zip]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Demoblaze e2e › API test - Get item details by id (first product) - POST /view - unique" classname="tests\demoblaze.spec.ts" time="0.454">
+<testcase name="Demoblaze e2e › API test - Get item details by id (first product) - POST /view - unique" classname="tests\demoblaze.spec.ts" time="0.338">
 <system-out>
 <![CDATA[
 [[ATTACHMENT|..\test-results\tests-demoblaze-Demoblaze--986ef-roduct---POST-view---unique-firefox\trace.zip]]
@@ -471,8 +471,8 @@
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="tests\example.spec.ts" timestamp="2025-10-21T01:02:57.834Z" hostname="firefox" tests="2" failures="0" skipped="0" time="6.122" errors="0">
-<testcase name="has title" classname="tests\example.spec.ts" time="3.99">
+<testsuite name="tests\example.spec.ts" timestamp="2025-10-21T01:56:51.574Z" hostname="firefox" tests="2" failures="0" skipped="0" time="4.94" errors="0">
+<testcase name="has title" classname="tests\example.spec.ts" time="2.901">
 <system-out>
 <![CDATA[
 [[ATTACHMENT|..\test-results\tests-example-has-title-firefox\test-finished-1.png]]
@@ -483,7 +483,7 @@
 ]]>
 </system-out>
 </testcase>
-<testcase name="get started link" classname="tests\example.spec.ts" time="2.132">
+<testcase name="get started link" classname="tests\example.spec.ts" time="2.039">
 <system-out>
 <![CDATA[
 [[ATTACHMENT|..\test-results\tests-example-get-started-link-firefox\test-finished-1.png]]
@@ -495,8 +495,8 @@
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="tests-examples\demo-todo-app.spec.ts" timestamp="2025-10-21T01:02:57.834Z" hostname="firefox" tests="24" failures="0" skipped="0" time="72.91" errors="0">
-<testcase name="New Todo › should allow me to add todo items" classname="tests-examples\demo-todo-app.spec.ts" time="4.03">
+<testsuite name="tests-examples\demo-todo-app.spec.ts" timestamp="2025-10-21T01:56:51.574Z" hostname="firefox" tests="24" failures="0" skipped="0" time="29.938" errors="0">
+<testcase name="New Todo › should allow me to add todo items" classname="tests-examples\demo-todo-app.spec.ts" time="2.822">
 <system-out>
 <![CDATA[
 [[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-cb93c--allow-me-to-add-todo-items-firefox\test-finished-1.png]]
@@ -507,7 +507,7 @@
 ]]>
 </system-out>
 </testcase>
-<testcase name="New Todo › should clear text input field when an item is added" classname="tests-examples\demo-todo-app.spec.ts" time="1.574">
+<testcase name="New Todo › should clear text input field when an item is added" classname="tests-examples\demo-todo-app.spec.ts" time="1.354">
 <system-out>
 <![CDATA[
 [[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-86427-field-when-an-item-is-added-firefox\test-finished-1.png]]
@@ -518,7 +518,7 @@
 ]]>
 </system-out>
 </testcase>
-<testcase name="New Todo › should append new items to the bottom of the list" classname="tests-examples\demo-todo-app.spec.ts" time="1.48">
+<testcase name="New Todo › should append new items to the bottom of the list" classname="tests-examples\demo-todo-app.spec.ts" time="1.482">
 <system-out>
 <![CDATA[
 [[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-de15b-s-to-the-bottom-of-the-list-firefox\test-finished-1.png]]
@@ -529,7 +529,7 @@
 ]]>
 </system-out>
 </testcase>
-<testcase name="Mark all as completed › should allow me to mark all items as completed" classname="tests-examples\demo-todo-app.spec.ts" time="2.042">
+<testcase name="Mark all as completed › should allow me to mark all items as completed" classname="tests-examples\demo-todo-app.spec.ts" time="1.05">
 <system-out>
 <![CDATA[
 [[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-f9478-mark-all-items-as-completed-firefox\test-finished-1.png]]
@@ -540,7 +540,7 @@
 ]]>
 </system-out>
 </testcase>
-<testcase name="Mark all as completed › should allow me to clear the complete state of all items" classname="tests-examples\demo-todo-app.spec.ts" time="3.274">
+<testcase name="Mark all as completed › should allow me to clear the complete state of all items" classname="tests-examples\demo-todo-app.spec.ts" time="1.056">
 <system-out>
 <![CDATA[
 [[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-3a74f-complete-state-of-all-items-firefox\test-finished-1.png]]
@@ -551,7 +551,7 @@
 ]]>
 </system-out>
 </testcase>
-<testcase name="Mark all as completed › complete all checkbox should update state when items are completed / cleared" classname="tests-examples\demo-todo-app.spec.ts" time="4.002">
+<testcase name="Mark all as completed › complete all checkbox should update state when items are completed / cleared" classname="tests-examples\demo-todo-app.spec.ts" time="1.196">
 <system-out>
 <![CDATA[
 [[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-1b069-items-are-completed-cleared-firefox\test-finished-1.png]]
@@ -562,7 +562,7 @@
 ]]>
 </system-out>
 </testcase>
-<testcase name="Item › should allow me to mark items as complete" classname="tests-examples\demo-todo-app.spec.ts" time="2.1">
+<testcase name="Item › should allow me to mark items as complete" classname="tests-examples\demo-todo-app.spec.ts" time="1.009">
 <system-out>
 <![CDATA[
 [[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-f23ad-e-to-mark-items-as-complete-firefox\test-finished-1.png]]
@@ -573,7 +573,7 @@
 ]]>
 </system-out>
 </testcase>
-<testcase name="Item › should allow me to un-mark items as complete" classname="tests-examples\demo-todo-app.spec.ts" time="3.694">
+<testcase name="Item › should allow me to un-mark items as complete" classname="tests-examples\demo-todo-app.spec.ts" time="1.04">
 <system-out>
 <![CDATA[
 [[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-7e469-o-un-mark-items-as-complete-firefox\test-finished-1.png]]
@@ -584,7 +584,7 @@
 ]]>
 </system-out>
 </testcase>
-<testcase name="Item › should allow me to edit an item" classname="tests-examples\demo-todo-app.spec.ts" time="4.56">
+<testcase name="Item › should allow me to edit an item" classname="tests-examples\demo-todo-app.spec.ts" time="1.048">
 <system-out>
 <![CDATA[
 [[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-18e17-ld-allow-me-to-edit-an-item-firefox\test-finished-1.png]]
@@ -595,7 +595,7 @@
 ]]>
 </system-out>
 </testcase>
-<testcase name="Editing › should hide other controls when editing" classname="tests-examples\demo-todo-app.spec.ts" time="5.635">
+<testcase name="Editing › should hide other controls when editing" classname="tests-examples\demo-todo-app.spec.ts" time="1.041">
 <system-out>
 <![CDATA[
 [[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-136f6-other-controls-when-editing-firefox\test-finished-1.png]]
@@ -606,7 +606,7 @@
 ]]>
 </system-out>
 </testcase>
-<testcase name="Editing › should save edits on blur" classname="tests-examples\demo-todo-app.spec.ts" time="3.546">
+<testcase name="Editing › should save edits on blur" classname="tests-examples\demo-todo-app.spec.ts" time="1.119">
 <system-out>
 <![CDATA[
 [[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-c7017-g-should-save-edits-on-blur-firefox\test-finished-1.png]]
@@ -617,7 +617,7 @@
 ]]>
 </system-out>
 </testcase>
-<testcase name="Editing › should trim entered text" classname="tests-examples\demo-todo-app.spec.ts" time="2.636">
+<testcase name="Editing › should trim entered text" classname="tests-examples\demo-todo-app.spec.ts" time="1.115">
 <system-out>
 <![CDATA[
 [[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-f1b93-ng-should-trim-entered-text-firefox\test-finished-1.png]]
@@ -628,7 +628,7 @@
 ]]>
 </system-out>
 </testcase>
-<testcase name="Editing › should remove the item if an empty text string was entered" classname="tests-examples\demo-todo-app.spec.ts" time="3.775">
+<testcase name="Editing › should remove the item if an empty text string was entered" classname="tests-examples\demo-todo-app.spec.ts" time="1.026">
 <system-out>
 <![CDATA[
 [[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-3f7df-pty-text-string-was-entered-firefox\test-finished-1.png]]
@@ -639,7 +639,7 @@
 ]]>
 </system-out>
 </testcase>
-<testcase name="Editing › should cancel edits on escape" classname="tests-examples\demo-todo-app.spec.ts" time="2.73">
+<testcase name="Editing › should cancel edits on escape" classname="tests-examples\demo-todo-app.spec.ts" time="1.015">
 <system-out>
 <![CDATA[
 [[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-b0dfe-ould-cancel-edits-on-escape-firefox\test-finished-1.png]]
@@ -650,7 +650,7 @@
 ]]>
 </system-out>
 </testcase>
-<testcase name="Counter › should display the current number of todo items" classname="tests-examples\demo-todo-app.spec.ts" time="2.147">
+<testcase name="Counter › should display the current number of todo items" classname="tests-examples\demo-todo-app.spec.ts" time="0.975">
 <system-out>
 <![CDATA[
 [[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-decb7-urrent-number-of-todo-items-firefox\test-finished-1.png]]
@@ -661,7 +661,7 @@
 ]]>
 </system-out>
 </testcase>
-<testcase name="Clear completed button › should display the correct text" classname="tests-examples\demo-todo-app.spec.ts" time="2.287">
+<testcase name="Clear completed button › should display the correct text" classname="tests-examples\demo-todo-app.spec.ts" time="0.976">
 <system-out>
 <![CDATA[
 [[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-a043b-ld-display-the-correct-text-firefox\test-finished-1.png]]
@@ -672,7 +672,7 @@
 ]]>
 </system-out>
 </testcase>
-<testcase name="Clear completed button › should remove completed items when clicked" classname="tests-examples\demo-todo-app.spec.ts" time="4.846">
+<testcase name="Clear completed button › should remove completed items when clicked" classname="tests-examples\demo-todo-app.spec.ts" time="1.224">
 <system-out>
 <![CDATA[
 [[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-e3f41-ompleted-items-when-clicked-firefox\test-finished-1.png]]
@@ -683,7 +683,7 @@
 ]]>
 </system-out>
 </testcase>
-<testcase name="Clear completed button › should be hidden when there are no items that are completed" classname="tests-examples\demo-todo-app.spec.ts" time="5.831">
+<testcase name="Clear completed button › should be hidden when there are no items that are completed" classname="tests-examples\demo-todo-app.spec.ts" time="1.405">
 <system-out>
 <![CDATA[
 [[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-8ddc4-no-items-that-are-completed-firefox\test-finished-1.png]]
@@ -694,7 +694,7 @@
 ]]>
 </system-out>
 </testcase>
-<testcase name="Persistence › should persist its data" classname="tests-examples\demo-todo-app.spec.ts" time="2.166">
+<testcase name="Persistence › should persist its data" classname="tests-examples\demo-todo-app.spec.ts" time="1.537">
 <system-out>
 <![CDATA[
 [[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-ebbe1-nce-should-persist-its-data-firefox\test-finished-1.png]]
@@ -705,7 +705,7 @@
 ]]>
 </system-out>
 </testcase>
-<testcase name="Routing › should allow me to display active items" classname="tests-examples\demo-todo-app.spec.ts" time="1.469">
+<testcase name="Routing › should allow me to display active items" classname="tests-examples\demo-todo-app.spec.ts" time="1.146">
 <system-out>
 <![CDATA[
 [[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-64101--me-to-display-active-items-firefox\test-finished-1.png]]
@@ -716,7 +716,7 @@
 ]]>
 </system-out>
 </testcase>
-<testcase name="Routing › should respect the back button" classname="tests-examples\demo-todo-app.spec.ts" time="2.341">
+<testcase name="Routing › should respect the back button" classname="tests-examples\demo-todo-app.spec.ts" time="1.323">
 <system-out>
 <![CDATA[
 [[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-7cf8c-uld-respect-the-back-button-firefox\test-finished-1.png]]
@@ -727,7 +727,7 @@
 ]]>
 </system-out>
 </testcase>
-<testcase name="Routing › should allow me to display completed items" classname="tests-examples\demo-todo-app.spec.ts" time="3.391">
+<testcase name="Routing › should allow me to display completed items" classname="tests-examples\demo-todo-app.spec.ts" time="1.141">
 <system-out>
 <![CDATA[
 [[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-4151f--to-display-completed-items-firefox\test-finished-1.png]]
@@ -738,7 +738,7 @@
 ]]>
 </system-out>
 </testcase>
-<testcase name="Routing › should allow me to display all items" classname="tests-examples\demo-todo-app.spec.ts" time="1.565">
+<testcase name="Routing › should allow me to display all items" classname="tests-examples\demo-todo-app.spec.ts" time="1.574">
 <system-out>
 <![CDATA[
 [[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-4b396-low-me-to-display-all-items-firefox\test-finished-1.png]]
@@ -749,7 +749,7 @@
 ]]>
 </system-out>
 </testcase>
-<testcase name="Routing › should highlight the currently applied filter" classname="tests-examples\demo-todo-app.spec.ts" time="1.789">
+<testcase name="Routing › should highlight the currently applied filter" classname="tests-examples\demo-todo-app.spec.ts" time="1.264">
 <system-out>
 <![CDATA[
 [[ATTACHMENT|..\test-results\tests-examples-demo-todo-a-ae530-he-currently-applied-filter-firefox\test-finished-1.png]]
