@@ -1,5 +1,5 @@
 ![Static Badge](https://img.shields.io/badge/Playwright-1.55.1-blue)
-![tests](https://img.shields.io/github/actions/workflow/status/khinsushein/Playwright_project_01/playwright.yml?label=tests)
+![tests](https://github.com/khinsushein/Playwright_project_01/blob/main/.github/workflows/playwright.yml)
 ![tests](https://github.com/khinsushein/Playwright_project_01/blob/main/.github/workflows/ci.yml)
 
 
