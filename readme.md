@@ -48,3 +48,12 @@ ________________________________________
 ## Author
 [Khin Su Shein] — QA Automation Engineer  
 Based in France, open to Luxembourg/Switzerland roles
+
+## Playwright API + UI Tests for Demoblaze
+
+[![Playwright CI](https://github.com/khinsushein/Playwright_project_01/actions/workflows/playwright.yml/badge.svg?branch=main)](https://github.com/khinsushein/Playwright_project_01/actions/workflows/playwright.yml)
+
+## HTML report
+📄 [Download latest HTML report](https://github.com/khinsushein/Playwright_project_01/actions)
+
+
