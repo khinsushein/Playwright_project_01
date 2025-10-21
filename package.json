@@ -5,7 +5,8 @@
     "report": "npx playwright show-report"
   },
   "devDependencies": {
-    "@playwright/test": "^1.55.1"
+    "@playwright/test": "^1.55.1",
+    "@types/node": "^24.9.1"
   },
   "dependencies": {
     "glob": "^11.0.3"

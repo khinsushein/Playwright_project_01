@@ -10,11 +10,11 @@ export default defineConfig({
     video: 'on',
     screenshot: 'on',
   },
-  reporter: [
-    ['list'],
-    ['junit', { outputFile: 'results/junit.xml' }],
-    ['html',  { open: 'never', outputFolder: 'playwright-report' }],
-  ],
+reporter: [
+  ['list'],
+  ['junit', { outputFile: 'results/junit-[project].xml' }],
+  ['html',  { open: 'never', outputFolder: 'playwright-report' }],
+],
   projects: [
     { name: 'chromium', use: { ...devices['Desktop Chrome'] } },
     { name: 'firefox',  use: { ...devices['Desktop Firefox'] } },
